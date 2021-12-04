@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   live.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/04 20:45:07 by fuserwyn          #+#    #+#             */
+/*   Updated: 2021/12/04 20:45:09 by fuserwyn         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/philosophers.h"
 
 void	*philo_actions(void *arg)
@@ -25,13 +37,14 @@ void	*life(t_data *data)
 	while (data->finish == 0)
 	{
 		i = 0;
-		while (i < data->ph_qty)
+		while (i < data->ph_quantity)
 		{
 			data->ph_struct[i].ph_die--;
 			if (data->ph_struct[i].ph_die == 0)
 			{
 				data->finish = 1;
-				write_msg(get_time_in_ms() - data->start_time, &data->ph_struct[i], DIE);
+				write_msg(get_time_in_ms() - data->start_time, \
+					&data->ph_struct[i], DIE);
 				return (NULL);
 			}
 			if (data->ph_struct[i].flag_end_of_eating == 1)
@@ -42,4 +55,3 @@ void	*life(t_data *data)
 	}
 	return (NULL);
 }
-

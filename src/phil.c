@@ -6,7 +6,7 @@
 /*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 19:34:34 by fuserwyn          #+#    #+#             */
-/*   Updated: 2021/11/27 19:20:49 by fuserwyn         ###   ########.fr       */
+/*   Updated: 2021/12/04 20:42:42 by fuserwyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	join_philo(t_data *data)
 	unsigned int	i;
 
 	i = 0;
-	while (i < data->ph_qty)
+	while (i < data->ph_quantity)
 	{
 		pthread_detach(data->ph_struct[i].ph);
 		i++;
@@ -80,4 +80,3 @@ int	main(int argc, char **argv)
 	join_philo(&data);
 	return (0);
 }
-

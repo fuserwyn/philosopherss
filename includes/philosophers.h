@@ -36,7 +36,6 @@ typedef struct s_phil
 	pthread_mutex_t   	*r_fork;
 	int 				flag_end_of_eating;
     int                 id;
-//    int                 even;
     int                 nnum_philo;
 	pthread_mutex_t 	print;
     unsigned int	    ph_die;
@@ -52,7 +51,7 @@ typedef struct s_phil
 
 typedef struct s_data
 {
-	unsigned int	ph_qty;
+	unsigned int	ph_quantity;
 	unsigned int	die;
 	unsigned int	t_sleep;
 	unsigned int	t_eat;
