@@ -1,5 +1,7 @@
 NAME = philo
 
+NAME_BONUS = philo_bonus
+
 SRC			=	src/phil.c\
 				src/inition.c\
 				src/utils.c\

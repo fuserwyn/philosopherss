@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inition.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/inition.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/live.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phil.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/phil.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,7 @@
       <workItem from="1638813753989" duration="4799000" />
       <workItem from="1638896737776" duration="4938000" />
       <workItem from="1638980714620" duration="8810000" />
-      <workItem from="1639054837264" duration="3356000" />
+      <workItem from="1639054837264" duration="4325000" />
     </task>
     <servers />
   </component>
