@@ -60,10 +60,7 @@ void	join_philo(t_data *data)
 
 	i = 0;
 	while (i < data->ph_quantity)
-	{
-		pthread_detach(data->ph_struct[i].ph);
-		i++;
-	}
+		pthread_detach(data->ph_struct[i++].ph);
 }
 
 int	main(int argc, char **argv)

@@ -6,7 +6,7 @@
 /*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 20:43:43 by fuserwyn          #+#    #+#             */
-/*   Updated: 2021/12/04 20:43:48 by fuserwyn         ###   ########.fr       */
+/*   Updated: 2021/12/04 20:58:50 by fuserwyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,21 @@ void	input_args(t_data *data, int argc, char **argv)
 		data->times_eat = atoii(argv[5]);
 	else
 		data->times_eat = -1;
+	if (data->ph_quantity == 0)
+	{
+		write(2, "Error: Incorrect symbol\n", 24);
+		data->finish = 1;
+	}
 }
 
 void	init_philo(t_data *data)
 {
 	size_t		i;
 
-	i = 0;
-	while (i < data->ph_quantity)
-	{
+	i = -1;
+	while (++i < data->ph_quantity)
 		pthread_create(&data->ph_struct[i].ph, NULL, philo_actions,
 			&data->ph_struct[i]);
-		i++;
-	}
 }
 
 void	init_philo_struct(t_data *data)
@@ -65,10 +67,7 @@ void	init_forks(t_data *data)
 	if (!data->forks)
 		return ;
 	while (i < data->ph_quantity)
-	{
-		pthread_mutex_init(&data->forks[i], NULL);
-		i++;
-	}
+		pthread_mutex_init(&data->forks[i++], NULL);
 }
 
 void	init_time(t_data *data)

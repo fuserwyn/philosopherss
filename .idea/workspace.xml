@@ -6,7 +6,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="" />
+    <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/philosophers.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/philosophers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inition.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/inition.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/live.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/phil.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/phil.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +37,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="21EUnoTlUqPot6cVbNctIPGT9fm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,12 +57,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +83,12 @@
       <workItem from="1638439053533" duration="20860000" />
       <workItem from="1638472876232" duration="301000" />
       <workItem from="1638617090433" duration="6337000" />
-      <workItem from="1638629661594" duration="5113000" />
+      <workItem from="1638629661594" duration="7037000" />
+      <workItem from="1638639958518" duration="3354000" />
+      <workItem from="1638813753989" duration="4799000" />
+      <workItem from="1638896737776" duration="4938000" />
+      <workItem from="1638980714620" duration="8810000" />
+      <workItem from="1639054837264" duration="3001000" />
     </task>
     <servers />
   </component>

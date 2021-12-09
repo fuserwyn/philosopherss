@@ -12,6 +12,18 @@
 
 #include "../includes/philosophers.h"
 
+void	one_philo(t_data *data, unsigned int i)
+{
+	if (data->ph_quantity == 1)
+	{
+			write_msg(get_time_in_ms() - data->start_time, \
+                    &data->ph_struct[i], FORK);
+			write_msg( data->die, \
+                    &data->ph_struct[i], DIE);
+		data->finish = 1;
+	}
+}
+
 void	*philo_actions(void *arg)
 {
 	t_phil	*ph;
@@ -39,6 +51,7 @@ void	*life(t_data *data)
 		i = 0;
 		while (i < data->ph_quantity)
 		{
+			one_philo(data, i);
 			data->ph_struct[i].ph_die--;
 			if (data->ph_struct[i].ph_die == 0)
 			{
