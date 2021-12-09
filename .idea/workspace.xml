@@ -88,11 +88,22 @@
       <workItem from="1638813753989" duration="4799000" />
       <workItem from="1638896737776" duration="4938000" />
       <workItem from="1638980714620" duration="8810000" />
-      <workItem from="1639054837264" duration="17819000" />
+      <workItem from="1639054837264" duration="18734000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/philo/src/live.c</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
