@@ -53,7 +53,6 @@ typedef struct s_data
 	unsigned int	t_eat;
 	unsigned long	start_time;
 	int				times_eat;
-	int				must_eat_qty;
 	int				live_or_death;
 	int				finish;
 	pthread_mutex_t	print;
