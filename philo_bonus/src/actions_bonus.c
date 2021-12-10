@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   actions_bonus.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/10 19:52:47 by fuserwyn          #+#    #+#             */
+/*   Updated: 2021/12/10 19:52:49 by fuserwyn         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/philosophers_bonus.h"
 
 void	take_forks(t_data *data )
@@ -14,7 +26,7 @@ void	eat(t_data *data)
 	data->must_eat_qty += 1;
 	if (data->must_eat_qty == data->times_eat + 1)
 		data->flag_end_of_eating = 1;
-	data->live_or_death = get_time_in_ms() - data->start_time + data->die;
+	data->live_or_death = get_time_in_ms() - data->start_time + data->t_die;
 	sem_post(data->sem_forks);
 }
 

@@ -1,47 +1,27 @@
 NAME = philo
 
-NAME_BONUS = philo_bonus
-
 SRC			=	src/phil.c\
 				src/inition.c\
 				src/utils.c\
 				src/live.c\
 				src/actions.c\
 
-
-BONUS_SRCS	= src/main_bonus.c\
-				src/utils_bonus.c\
-				src/inition_bonus.c\
-				src/actions_bonus.c\
-
-
 CC 			= gcc -Wall -Wextra -Werror
 
-HEADER = philosophers.h
+INCLUDES 	= -I.
 
-HEADER_BONUS = philosophers_bonus.h
+OBJS 	= $(SRC:.c=.o)
 
-OBJ_SRC 	= $(SRC:.c=.o)
+$(NAME): $(OBJS)
+	$(CC) -o $(NAME)  $(SRC)
 
-OBJ_BONUS = $(BONUS_SRCS:.c=.o)
-
-all: $(NAME)
-
-$(NAME): 			$(OBJ_SRC)
-					$(CC) $(OBJ_SRC) -o $(NAME)
-
-
-%.o:	%.c $(HEADER)
-	$(CC) -c $< -o $@
-
-bonus:
-	@make OBJ_SRC="$(OBJ_BONUS)" HEADER="$(HEADER_BONUS)" NAME="$(NAME_BONUS)" all
+all: $(NAME) $(OBJS) $(INCLUDES)
 
 clean:
-	rm -rf $(OBJS) $(OBJ_BONUS)
+	rm -rf $(OBJS)
 
 fclean: clean
-	rm -rf $(NAME) $(NAME_BONUS)
+	rm -rf $(NAME)
 
 re: fclean all
 

@@ -32,7 +32,7 @@ void	eat(t_phil *ph)
 
 	take_forks(ph);
 	time = get_time_in_ms() - ph->data->start_time ;
-	ph->ph_die = ph->data->die;
+	ph->ph_die = ph->data->t_die;
 	write_msg(time, ph, EAT);
 	ph->ph_times_eat += 1;
 	if (ph->ph_times_eat == ph->data->times_eat + 1)

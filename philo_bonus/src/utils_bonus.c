@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils_bonus.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/10 19:52:17 by fuserwyn          #+#    #+#             */
+/*   Updated: 2021/12/10 19:52:37 by fuserwyn         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/philosophers_bonus.h"
 
 unsigned long	get_time_in_ms(void)
@@ -28,10 +40,10 @@ void	sem_closer(t_data *data)
 
 int	write_msg_bonus(unsigned long int time, t_data *data, char *msg)
 {
-//	if (data->times_eat == data->must_eat_qty)
-//		exit(1);
 	sem_wait(data->death);
 	printf("%6ld %2d %s", time, data->id, msg);
+	if (msg == DIE)
+		exit (0);
 	sem_post(data->death);
 	return (1);
 }

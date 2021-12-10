@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   inition_bonus.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/10 19:51:31 by fuserwyn          #+#    #+#             */
+/*   Updated: 2021/12/10 19:54:05 by fuserwyn         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/philosophers_bonus.h"
 
 void	input_args(t_data *data, int argc, char **argv)
 {
 	data->ph_quantity = (unsigned int) atoii(argv[1]);
-	data->die = (unsigned int) atoii(argv[2]);
+	data->t_die = (unsigned int) atoii(argv[2]);
 	data->t_eat = (unsigned int) atoii(argv[3]);
 	data->t_sleep = (unsigned int) atoii(argv[4]);
 	data->finish = 0;
@@ -11,7 +23,7 @@ void	input_args(t_data *data, int argc, char **argv)
 	data->id = 0;
 	data->start_time = 0;
 	data->must_eat_qty = 0;
-	data->live_or_death = data->die;
+	data->live_or_death = data->t_die;
 	if (argc == 6)
 		data->times_eat = atoii(argv[5]);
 	else
@@ -32,12 +44,12 @@ void	init_time(t_data *data)
 	+ (current_time.tv_usec) / 1000;
 }
 
-
-void init_forks(t_data *data)
+void	init_forks(t_data *data)
 {
 	sem_unlink("forks");
 	sem_unlink("death");
-	data->sem_forks = sem_open("forks", O_CREAT, S_IRWXU, (data->ph_quantity / 2));
+	data->sem_forks = sem_open("forks", O_CREAT, S_IRWXU, \
+		(data->ph_quantity / 2));
 	data->death = sem_open("death", O_CREAT, S_IRWXU, 1);
 }
 
@@ -47,8 +59,8 @@ void	init_philo(t_data *data)
 	int						var;
 
 	data->pid = malloc(sizeof(int) * data->ph_quantity);
-//	if (data->pid == NULL)
-//		return (-1);
+	if (data->pid == NULL)
+		return ;
 	i = 0;
 	while (i < data->ph_quantity)
 	{
@@ -67,5 +79,9 @@ void	init_philo(t_data *data)
 		while (i < data->ph_quantity)
 			kill(data->pid[i++], SIGTERM);
 	}
-//	return (free_ft(data));
+}
+
+void	ft_free(t_data *data)
+{
+	free(data);
 }

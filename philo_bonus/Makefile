@@ -5,7 +5,6 @@ BONUS_SRCS	= src/philo_bonus.c\
 				src/inition_bonus.c\
 				src/actions_bonus.c\
 				src/live_bonus.c\
-				src/be_free.c\
 
 CC 			= gcc -Wall -Wextra -Werror
 

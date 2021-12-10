@@ -15,7 +15,7 @@
 void	input_args(t_data *data, int argc, char **argv)
 {
 	data->ph_quantity = (unsigned int) atoii(argv[1]);
-	data->die = (unsigned int) atoii(argv[2]);
+	data->t_die = (unsigned int) atoii(argv[2]);
 	data->t_eat = (unsigned int) atoii(argv[3]);
 	data->t_sleep = (unsigned int) atoii(argv[4]);
 	if (argc == 6)
@@ -47,7 +47,7 @@ void	init_philo_struct(t_data *data)
 	data->ph_struct = (t_phil *)malloc(sizeof(t_phil) * data->ph_quantity);
 	while (i < data->ph_quantity)
 	{
-		data->ph_struct[i].nnum_philo = i + 1;
+		data->ph_struct[i].num_philo = i + 1;
 		data->ph_struct[i].l_fork = &data->forks[i];
 		data->ph_struct[i].r_fork = &data->forks[(i + 1) % data->ph_quantity];
 		data->ph_struct[i].print = data->print;

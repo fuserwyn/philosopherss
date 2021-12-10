@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   philo_bonus.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fuserwyn <fuserwyn@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/10 19:52:26 by fuserwyn          #+#    #+#             */
+/*   Updated: 2021/12/10 19:52:27 by fuserwyn         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/philosophers_bonus.h"
 
 int	ft_len(const char *str)
@@ -55,4 +67,3 @@ int	main(int argc, char **argv)
 	sem_closer(&data);
 	return (0);
 }
-

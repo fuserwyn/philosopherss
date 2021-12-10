@@ -16,10 +16,10 @@ void	one_philo(t_data *data, unsigned int i)
 {
 	if (data->ph_quantity == 1)
 	{
-		write_msg(get_time_in_ms() - data->start_time, \
-		&data->ph_struct[i], FORK);
-				  write_msg( data->die, \
-                    &data->ph_struct[i], DIE);
+		write_msg(get_time_in_ms() - data->start_time,
+			&data->ph_struct[i], FORK);
+		write_msg(data->t_die,
+			&data->ph_struct[i], DIE);
 		data->finish = 1;
 	}
 }
