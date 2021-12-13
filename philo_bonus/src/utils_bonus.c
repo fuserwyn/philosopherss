@@ -32,7 +32,6 @@ void	u_sleep(int current_time)
 void	sem_closer(t_data *data)
 {
 	sem_close(data->sem_forks);
-	sem_close(data->sem_forks);
 	sem_close(data->death);
 	sem_unlink("forks");
 	sem_unlink("death");
@@ -43,7 +42,7 @@ int	write_msg_bonus(unsigned long int time, t_data *data, char *msg)
 	sem_wait(data->death);
 	printf("%6ld %2d %s", time, data->id, msg);
 	if (msg == DIE)
-		exit (0);
+		exit(0);
 	sem_post(data->death);
 	return (1);
 }

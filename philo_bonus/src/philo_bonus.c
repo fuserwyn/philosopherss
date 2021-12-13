@@ -59,7 +59,7 @@ int	main(int argc, char **argv)
 	t_data	data;
 
 	if (check_input(argc, argv))
-		return (printf("wrong input\n"));
+		return (write(1, "wrong input\n", 13));
 	input_args(&data, argc, argv);
 	init_time(&data);
 	init_forks(&data);

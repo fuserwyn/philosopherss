@@ -50,10 +50,10 @@ void	*check_life(void *life)
 	{
 		one_philo(data);
 		time = get_time_in_ms() - data->start_time;
-		if (data->live_or_death - time <= 0)
+		if (data->life_or_death - time <= 0)
 			write_msg_bonus(time, data, DIE);
 		if (data->flag_end_of_eating == 1)
-			exit(0);
+			data->finish = 1;
 	}
 	return (NULL);
 }

@@ -38,7 +38,7 @@ typedef struct s_data
 	unsigned long	start_time;
 	int				times_eat;
 	int				must_eat_qty;
-	int				live_or_death;
+	int				life_or_death;
 	int				finish;
 	int				id;
 	int				*pid;

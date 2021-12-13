@@ -54,7 +54,7 @@ int	check_input(int argc, char **argv)
 	return (0);
 }
 
-void	join_philo(t_data *data)
+void	detach_philo(t_data *data)
 {
 	unsigned int	i;
 
@@ -74,6 +74,8 @@ int	main(int argc, char **argv)
 	init_philo_struct(&data);
 	init_time(&data);
 	life(&data);
-	join_philo(&data);
+	detach_philo(&data);
+	if (data.forks)
+		free(data.forks);
 	return (0);
 }

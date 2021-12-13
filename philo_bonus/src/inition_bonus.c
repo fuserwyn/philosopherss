@@ -23,7 +23,7 @@ void	input_args(t_data *data, int argc, char **argv)
 	data->id = 0;
 	data->start_time = 0;
 	data->must_eat_qty = 0;
-	data->live_or_death = data->t_die;
+	data->life_or_death = data->t_die;
 	if (argc == 6)
 		data->times_eat = atoii(argv[5]);
 	else
@@ -60,7 +60,7 @@ void	init_philo(t_data *data)
 
 	data->pid = malloc(sizeof(int) * data->ph_quantity);
 	if (data->pid == NULL)
-		return ;
+		exit(1);
 	i = 0;
 	while (i < data->ph_quantity)
 	{
@@ -73,7 +73,7 @@ void	init_philo(t_data *data)
 		i++;
 	}
 	waitpid(-1, &var, 0);
-	i = 1;
+	i = 0;
 	if (var == 0)
 	{
 		while (i < data->ph_quantity)

@@ -8,19 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/philo/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo/includes/philosophers.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo/includes/philosophers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/actions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo/src/inition.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/inition.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/live.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo/src/phil.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/phil.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/be_free.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/inition_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/inition_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/main_bonus.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/utils_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/utils_bonus.c" afterDir="false" />
     </list>
@@ -95,7 +89,10 @@
       <workItem from="1638896737776" duration="4938000" />
       <workItem from="1638980714620" duration="8810000" />
       <workItem from="1639054837264" duration="19009000" />
-      <workItem from="1639151008458" duration="4024000" />
+      <workItem from="1639151008458" duration="4779000" />
+      <workItem from="1639319433617" duration="7884000" />
+      <workItem from="1639330074928" duration="1259000" />
+      <workItem from="1639410717159" duration="4080000" />
     </task>
     <servers />
   </component>

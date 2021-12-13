@@ -53,7 +53,6 @@ typedef struct s_data
 	unsigned int	t_eat;
 	unsigned long	start_time;
 	int				times_eat;
-	int				live_or_death;
 	int				finish;
 	pthread_mutex_t	print;
 	pthread_t		*ph;
@@ -65,8 +64,8 @@ int				is_digit(char *str);
 int				ft_len(const char *str);
 void			input_args(t_data *data, int argc, char **argv);
 void			init_philo(t_data *data);
-void			init_philo_struct(t_data *data);
-void			init_forks(t_data *data);
+int				init_philo_struct(t_data *data);
+int				init_forks(t_data *data);
 void			*philo_actions(void *arg);
 int				thinking(t_phil *philosopher);
 int				write_msg(unsigned long int time, \

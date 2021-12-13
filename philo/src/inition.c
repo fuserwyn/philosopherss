@@ -39,12 +39,14 @@ void	init_philo(t_data *data)
 			&data->ph_struct[i]);
 }
 
-void	init_philo_struct(t_data *data)
+int	init_philo_struct(t_data *data)
 {
 	unsigned int	i;
 
 	i = 0;
 	data->ph_struct = (t_phil *)malloc(sizeof(t_phil) * data->ph_quantity);
+	if (!data->ph_struct)
+		return (-1);
 	while (i < data->ph_quantity)
 	{
 		data->ph_struct[i].num_philo = i + 1;
@@ -53,21 +55,22 @@ void	init_philo_struct(t_data *data)
 		data->ph_struct[i].print = data->print;
 		data->ph_struct[i].id = i + 1;
 		data->ph_struct[i].data = data;
-		data->live_or_death = 0;
 		i++;
 	}
+	return (0);
 }
 
-void	init_forks(t_data *data)
+int	init_forks(t_data *data)
 {
 	unsigned int	i;
 
 	i = 0;
 	data->forks = malloc(sizeof(pthread_mutex_t) * data->ph_quantity);
 	if (!data->forks)
-		return ;
+		return (-1);
 	while (i < data->ph_quantity)
 		pthread_mutex_init(&data->forks[i++], NULL);
+	return (0);
 }
 
 void	init_time(t_data *data)

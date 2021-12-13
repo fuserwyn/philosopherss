@@ -26,7 +26,7 @@ void	eat(t_data *data)
 	data->must_eat_qty += 1;
 	if (data->must_eat_qty == data->times_eat + 1)
 		data->flag_end_of_eating = 1;
-	data->live_or_death = get_time_in_ms() - data->start_time + data->t_die;
+	data->life_or_death = get_time_in_ms() - data->start_time + data->t_die;
 	sem_post(data->sem_forks);
 }
 
