@@ -6,16 +6,21 @@ SRC			=	src/phil.c\
 				src/live.c\
 				src/actions.c\
 
-CC 			= gcc -Wall -Wextra -Werror
+CC 			= gcc
 
-INCLUDES 	= -I.
+FLAGS		= -Wall -Wextra -Werror
+
+INCLUDES 	= includes/philosophers.h
 
 OBJS 	= $(SRC:.c=.o)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME)  $(SRC)
+	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 all: $(NAME) $(OBJS) $(INCLUDES)
+
+%.o: %.c $(INCLUDES)
+		$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJS)

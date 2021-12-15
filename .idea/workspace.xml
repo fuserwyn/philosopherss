@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/includes/philosophers.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo/includes/philosophers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/actions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/live.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/philo_bonus.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/philo_bonus.dSYM/Contents/Resources/DWARF/philo_bonus" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/philo/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,7 @@
       <workItem from="1639330074928" duration="1259000" />
       <workItem from="1639410717159" duration="7300000" />
       <workItem from="1639503345014" duration="2144000" />
-      <workItem from="1639592215456" duration="7833000" />
+      <workItem from="1639592215456" duration="8554000" />
     </task>
     <servers />
   </component>
