@@ -30,6 +30,7 @@ typedef struct s_phil
 {
 	pthread_mutex_t		*l_fork;
 	pthread_mutex_t		*r_fork;
+	pthread_mutex_t		defend;
 	int					flag_end_of_eating;
 	int					id;
 	int					num_philo;

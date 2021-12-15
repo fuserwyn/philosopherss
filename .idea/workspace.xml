@@ -7,16 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe322f8-8dab-4e7b-bd83-9b0962575b80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo/includes/philosophers.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo/includes/philosophers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/inition.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/inition.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo/src/phil.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/phil.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo/src/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/actions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo/src/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo/src/live.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/includes/philosophers_bonus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo_bonus/philo_bonus.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/philo_bonus/philo_bonus.dSYM/Contents/Resources/DWARF/philo_bonus" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/actions_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/inition_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/inition_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/live_bonus.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/philo_bonus.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philo_bonus/src/utils_bonus.c" beforeDir="false" afterPath="$PROJECT_DIR$/philo_bonus/src/utils_bonus.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,9 @@
       <workItem from="1639151008458" duration="4779000" />
       <workItem from="1639319433617" duration="7884000" />
       <workItem from="1639330074928" duration="1259000" />
-      <workItem from="1639410717159" duration="4080000" />
+      <workItem from="1639410717159" duration="7300000" />
+      <workItem from="1639503345014" duration="2144000" />
+      <workItem from="1639592215456" duration="7833000" />
     </task>
     <servers />
   </component>
@@ -106,6 +109,11 @@
           <url>file://$PROJECT_DIR$/philo/src/live.c</url>
           <line>28</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/intra-uuid-7b3cd6d1-d106-498a-a16b-096c3f12a6a1-3897339/philo/src/actions.c</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

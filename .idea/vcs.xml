@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/intra-uuid-7b3cd6d1-d106-498a-a16b-096c3f12a6a1-3897339" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/philo/intra-uuid-7b3cd6d1-d106-498a-a16b-096c3f12a6a1-3897339" vcs="Git" />
   </component>
 </project>

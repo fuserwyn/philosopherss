@@ -14,20 +14,37 @@
 
 void	take_forks(t_data *data )
 {
+	if (data->finish == 1)
+		return ;
 	sem_wait(data->sem_forks);
-	write_msg_bonus(get_time_in_ms() - data->start_time, data, FORK);
-	write_msg_bonus(get_time_in_ms() - data->start_time, data, FORK);
+	if (write_msg_bonus(get_time_in_ms() - data->start_time, data, FORK) == 0)
+	{
+		sem_post(data->sem_forks);
+		sem_post(data->sem_forks);
+		return ;
+	}
 }
 
 void	eat(t_data *data)
 {
-	write_msg_bonus(get_time_in_ms() - data->start_time, data, EAT);
+	sem_wait(data->meals);
+	if (write_msg_bonus(get_time_in_ms() - data->start_time, data, EAT) == 0)
+	{
+		sem_post(data->sem_forks);
+		sem_post(data->sem_forks);
+		sem_post(data->meals);
+		return ;
+	}
+	data->t_last_eat = get_time_in_ms();
+	sem_post(data->meals);
 	u_sleep(data->t_eat);
 	data->must_eat_qty += 1;
+	sem_post(data->sem_forks);
+	sem_post(data->sem_forks);
 	if (data->must_eat_qty == data->times_eat + 1)
 		data->flag_end_of_eating = 1;
 	data->life_or_death = get_time_in_ms() - data->start_time + data->t_die;
-	sem_post(data->sem_forks);
+
 }
 
 void	sleeping(t_data *data)

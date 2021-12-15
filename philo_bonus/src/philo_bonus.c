@@ -65,5 +65,6 @@ int	main(int argc, char **argv)
 	init_forks(&data);
 	init_philo(&data);
 	sem_closer(&data);
+	read(0, NULL, 1);
 	return (0);
 }

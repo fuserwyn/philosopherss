@@ -42,12 +42,12 @@ typedef struct s_data
 	int				finish;
 	int				id;
 	int				*pid;
+	int 			t_last_eat;
 	int				flag_end_of_eating;
 	pthread_t		*ph;
 	sem_t			*sem_forks;
 	sem_t			*death;
 	sem_t			*meals;
-
 }				t_data;
 
 void			ft_free(t_data *data);

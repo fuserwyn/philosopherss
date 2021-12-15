@@ -46,14 +46,20 @@ void	*check_life(void *life)
 	long long int	time;
 
 	data = (t_data *)life;
-	while (data->finish == 0)
+	sem_wait(data->meals);
+//	time = get_time_in_ms() - data->t_last_eat;
+	while (data->finish != 1)
 	{
 		one_philo(data);
 		time = get_time_in_ms() - data->start_time;
-		if (data->life_or_death - time <= 0)
-			write_msg_bonus(time, data, DIE);
-		if (data->flag_end_of_eating == 1)
-			data->finish = 1;
+		sem_post(data->meals);
+		u_sleep(1);
+		sem_wait(data->meals);
+			if (data->life_or_death - time <= 0)
+				write_msg_bonus(time, data, DIE);
+			if (data->flag_end_of_eating == 1)
+				data->finish = 1;
 	}
+	sem_post(data->meals);
 	return (NULL);
 }

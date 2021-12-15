@@ -46,6 +46,8 @@ void	*life(t_data *data)
 	unsigned int	i;
 
 	init_philo(data);
+	pthread_mutex_init(&data->ph_struct->defend, NULL);
+	pthread_mutex_lock(&data->ph_struct->defend);
 	while (data->finish == 0)
 	{
 		i = 0;
@@ -53,6 +55,9 @@ void	*life(t_data *data)
 		{
 			one_philo(data, i);
 			data->ph_struct[i].ph_die--;
+			pthread_mutex_unlock(&data->ph_struct[i].defend);
+			usleep(1);
+			pthread_mutex_lock(&data->ph_struct[i].defend);
 			if (data->ph_struct[i].ph_die == 0)
 			{
 				data->finish = 1;

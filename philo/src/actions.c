@@ -24,6 +24,7 @@ void	put_forks(t_phil *ph)
 {
 	pthread_mutex_unlock(ph->l_fork);
 	pthread_mutex_unlock(ph->r_fork);
+	pthread_mutex_unlock(&ph->defend);
 }
 
 void	eat(t_phil *ph)
@@ -34,6 +35,8 @@ void	eat(t_phil *ph)
 	time = get_time_in_ms() - ph->data->start_time ;
 	ph->ph_die = ph->data->t_die;
 	write_msg(time, ph, EAT);
+	if (ph->data->finish != 1)
+		pthread_mutex_lock(&ph->defend);
 	ph->ph_times_eat += 1;
 	if (ph->ph_times_eat == ph->data->times_eat + 1)
 		ph->flag_end_of_eating += 1;
